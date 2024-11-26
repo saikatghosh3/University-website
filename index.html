@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    
+    <div id="moveToTop" class="move-to-top">&#8679;</div>
+
     <section class="header">
         <nav>
             <a href="index.html"><img src="logo.png"></a>
@@ -22,16 +25,20 @@
 
                 </ul>
 
-            </div><!--end nav-links-->
+            </div>
             <i class="fa-solid fa-bars" onclick="showMenu()" id="icon"></i>
         </nav>
         <div class="text-box">
             <h1>World's Biggest University</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore et dolores in rem aliquam impedit aspernatur unde libero facilis quos. Non provident id iusto numquam laudantium magnam et sapiente earum.</p>
+            
                    <a href="" class="hero-btn">Visit us to know more</a>
-        </div><!--end Text-box-->
+        </div>
 
-    </section><!--end section-->
+    </section>
+
+    
+
+
     <!--javaScript toggle manu-->
 
     <!--course-->
@@ -63,22 +70,22 @@
         <h1>
             Our Global Campus
         </h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit voluptatum consectetur numquam quis sunt aliquam?</p>
+       
         <div class="row">
             <div class="campus-col">
-                <img src="london.png">
+                <img src="campus7.jpg">
                 <div class="layer">
                     <h3>LONDON</h3>
                 </div>
             </div>
             <div class="campus-col">
-                <img src="newyork.png">
+                <img src="campus2.jpg">
                 <div class="layer">
                     <h3>NEW YORK</h3>
                 </div>
             </div>
             <div class="campus-col">
-                <img src="washington.png">
+                <img src="campus7.jpg">
                 <div class="layer">
                     <h3>WASHINGTON</h3>
                 </div>
@@ -151,16 +158,28 @@
             <a href="" class="hero-btn">CONTACT US</a>
               
     </section>
-    <!--footer-->
+        <!-- footer  -->
     <section class="footer">
-        <h4>About us</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Eaque, doloribus a sunt sapiente officiis impedit perspiciatis veritatis atque aperiam assumenda?</p>
-        <div class="icon2">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-square-instagram" id="icon3"></i>
-            <i class="fa-brands fa-linkedin"></i>
-           </div>
+        <div class="footer-left">
+            <p>Privacy Policy | All Rights Reserved</p>
+        </div>
+        <div class="footer-center">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-right">
+            <h4>Contact Info</h4>
+            <ul>
+                <li><i class="fas fa-envelope"></i> info@example.com</li>
+                <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</li>
+            </ul>
+        </div>
     </section>
     <script>
         var navLinks = document.getElementById("navLinks");
@@ -170,6 +189,28 @@
         function hideMenu(){
             navLinks.style.right = "-200px";
         }
+
+         // JavaScript to handle the Move to Up functionality
+const moveToTop = document.getElementById('moveToTop');
+
+// Show the button when scrolling down
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        moveToTop.classList.add('show');
+    } else {
+        moveToTop.classList.remove('show');
+    }
+});
+
+// Scroll to top when the button is clicked
+moveToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+
     </script>
 </body>
 </html>
