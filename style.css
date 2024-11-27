@@ -343,6 +343,7 @@ background: rgba(226, 0, 0 , 0.7);
 }
 
 .facilities h1 {
+   
     font-size: 2.5rem;
     font-weight: 700;
     color: #2c3e50;
@@ -350,6 +351,7 @@ background: rgba(226, 0, 0 , 0.7);
 }
 
 .facilities p {
+    margin-top: 3rem;
     color: #7f8c8d;
     font-size: 1rem;
     line-height: 1.6;
@@ -365,6 +367,9 @@ background: rgba(226, 0, 0 , 0.7);
 .facilities-col img {
     width: 100%;
     border-radius: 10px;
+}
+.facilities-col img:hover {
+    scale: 1.1;
 }
 .facilities-col p{
     padding: 0;
@@ -801,3 +806,4 @@ body {
 
 
 
+// 
