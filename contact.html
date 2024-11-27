@@ -11,7 +11,7 @@
 <style>
 
 .contact{
-  background-color: #333;
+  background-color: #524a4a;
     }
     .contact h2{
     font-size: 40px;
@@ -20,9 +20,10 @@
     margin-bottom: 10px;
 }
 .contact form {
-    margin-left: 20rem;
+    margin-left: 40rem;
     width: 600px;
     text-align: center;
+    margin-top: -19rem;
     
 }
 form .input-box{
@@ -70,6 +71,7 @@ form .textarea-field .error-txt{
 }
 
 form button{
+    margin-top: -2rem;
     padding: 12px 32px;
     background-color: #0ef;
     border: none;
@@ -81,7 +83,7 @@ form button{
     letter-spacing: 1px;
     font-weight: 600;
     cursor: pointer;
-    margin-top: 10px;
+    
 }
 form button:hover{
     box-shadow: none;
@@ -150,45 +152,67 @@ form button:hover{
 
 </div>
     </section> -->
-    <section class="contact">
-        <h2> Contact Me!</h2>
-     
+   
+      <section class="contact">
+        <h2>Contact Me!</h2>
+    
+        <!-- Left portion from the second section -->
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house" id="icon6"></i>
+                    <span>
+                        <h5>XYZ Road, Abs building</h5>
+                        <p>Dhaka Uddan, Dhaka, Bangladesh.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone" id="icon6"></i>
+                    <span>
+                        <h5>+8800220388983</h5>
+                        <p>Monday to Saturday, 10 AM to 6 PM.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope" id="icon6"></i>
+                    <span>
+                        <h5>info.blast10@gmail.com</h5>
+                        <p>Email us your query.</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Original form -->
         <form action="#">
-         <div class="input-box">
-             <div class="input-field field">
-                 <input type="text" placeholder="Full Name" id="name"
-                 class="item" autocomplete="off">
-             <div class="error-txt"> Full Name can't be blank</div>
-             </div>
-             <div class="input-field field">
-                 <input type="text" placeholder="Email Address" id="email"
-                 class="item" autocomplete="off">
-                 <div class="error-txt email"> Email Address can't be blank</div>
-             </div>
-         </div>
-         <div class="input-box">
-             <div class="input-field field">
-                 <input type="text" placeholder="Phone Number" id="phone"
-                 class="item" autocomplete="off">
-                 <div class="error-txt"> Phone Number can't be blank</div>
-             </div>
-             <div class="input-field field">
-                 <input type="text" placeholder="Subject" id="subject"
-                 class="item" autocomplete="off">
-                 <div class="error-txt"> Subject can't be blank</div>
-             </div>
-         </div>
-         <div class="textarea-field field">
-             <textarea name="" id="message" cols="30" rows="10"
-             placeholder="Your Message" class="item"
-             autocomplete="off"></textarea>
-             <div class="error-txt"> Message can't be blank</div>
-         </div>
-         <button type="submit">Send Message</button>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <div class="error-txt email">Email Address can't be blank</div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+            <button type="submit">Send Message</button>
         </form>
-         </section>
-     
-
+    </section>
+    
     <!--footer-->
     <section class="footer">
         <div class="footer-left">
