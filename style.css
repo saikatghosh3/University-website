@@ -315,7 +315,8 @@ h3{
     transition: 0.5s;
 }
 .layer:hover{
-background: rgba(226, 0, 0 , 0.7);
+background: rgba(238, 125, 125, 0.7);
+opacity: 0.5;
 }
 .layer h3{
     width: 100%;
@@ -813,4 +814,38 @@ body {
 
 
 
-// 
+/* for dark and light mode   */
+
+/* Transition for smooth color change */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.light-mode h1 {
+    color: #7794f2; /* Darker shade for light mode */
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f1f1f1;
+}
+
+body.dark-mode h1 {
+    color: #7794f2; /* Accent color for dark mode */
+}
+
+/* Mode Toggle Icon */
+.mode-toggle {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    color: inherit; /* Matches current text color */
+    transition: color 0.3s ease;
+}
