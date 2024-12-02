@@ -468,10 +468,11 @@ opacity: 0.5;
 }
 .about-col img{
     width: 100%;
+    
 }
 .about-col h1{
     padding-top: 0;
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 .about-col p{
 padding: 15px 0 25px;
@@ -788,7 +789,14 @@ body.light-mode {
 }
 
 body.light-mode h1 {
-    color: #7794f2; /* Darker shade for light mode */
+    /* color: #7794f2;  */
+    /* color:#001F54;  */
+    /* color: #800020;  */
+     /* color: #4169E1;   */
+     color: #00CFFD;  
+     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+
+     
 }
 
 /* Dark Mode */
@@ -798,7 +806,11 @@ body.dark-mode {
 }
 
 body.dark-mode h1 {
-    color: #7794f2; /* Accent color for dark mode */
+    /* color: #7794f2;  */
+    /* color: #39FF14; */
+    color: #00CFFD;
+   
+
 }
 
 /* Mode Toggle Icon */
