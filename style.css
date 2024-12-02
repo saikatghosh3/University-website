@@ -372,6 +372,10 @@ opacity: 0.5;
     display: flex;
 
 }
+.testimonial-col:hover{
+    scale: 1.1;
+    background: linear-gradient(145deg, #b2ebf2, #e0f7fa);
+}
 .testimonial-col img{
     height: 40px;
     margin-left: 5px;
