@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
 
-.contact{
+/* .contact{
   background-color: #524a4a;
     }
     .contact h2{
@@ -91,7 +91,136 @@ form button:hover{
 
 #contact1{
     font-size: 2rem;
+} */
+
+
+.contact {
+    background-color: #524a4a;
+    padding: 20px;
 }
+
+.contact h2 {
+    font-size: 32px; /* Reduce font size for smaller screens */
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact form {
+    margin: 0 auto; /* Center align form */
+    width: 90%; /* Adjust form width for smaller screens */
+    text-align: center;
+    margin-top: 0;
+}
+
+form .input-box {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 15px; /* Add space between input fields */
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box .input-field {
+    width: 100%; /* Make inputs full width on smaller screens */
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #ededed;
+    margin: 12px 0;
+}
+
+.field.error .item {
+    border-color: #d93025;
+}
+
+.field .item::placeholder {
+    color: rgba(225, 225, 225, .3);
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-txt {
+    margin-top: -10px;
+}
+
+form button {
+    margin-top: 20px; /* Adjust spacing for better layout on smaller screens */
+    padding: 12px 32px;
+    background-color: #0ef;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 1rem;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%; /* Make button full width */
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
+#contact1 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 28px; /* Further reduce font size for mobile screens */
+    }
+
+    .contact form {
+        margin: 0 auto;
+        width: 100%; /* Full width for smaller devices */
+    }
+
+    form .input-box {
+        gap: 10px; /* Reduce spacing between input fields */
+    }
+
+    form button {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact h2 {
+        font-size: 24px; /* Smaller font size for very small devices */
+    }
+
+    form button {
+        font-size: 0.85rem; /* Smaller button font size for very small devices */
+    }
+}
+
+
 </style>
 
 </head>
@@ -122,40 +251,7 @@ form button:hover{
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.728569678299!2d90.33421987451779!3d23.757056788522313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf7c1a50ba97%3A0x3089051a5cb66ea2!2sChandrima%20Model%20Town!5e0!3m2!1sen!2sbd!4v1710865323618!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 </section>
-    <!-- <section class="Contact-us">
-<div class="row">
-    <div class="contact-col">
-        <div>
-            <i class="fa-solid fa-house" id="icon6"></i>
-            <span><h5>XYZ Road, Abs building</h5>
-            <P>Dhaka Uddan, Dhaka,Bangladesh.</P>
-            </span>
-        </div>
-        <div>
-            <i class="fa-solid fa-phone" id="icon6"></i>
-            <span><h5>+8800220388983</h5>
-            <P>Monday to Sataurday,10AM to 6PM.</P>
-            </span>
-        </div>
-        <div>
-            <i class="fa-solid fa-envelope"id="icon6"></i>
-            <span><h5>info.blast10@gmail.com</h5>
-            <P>Email us your query.</P>
-            </span>
-        </div>
-    </div>
-    <div class="contact-col">
-    <form action="">
-        <input type="text" placeholder="Enter Name" required>
-        <input type="email" placeholder="Enter Email" required>
-        <input type="text" placeholder="Enter Your Subject" required>
-        <textarea rows="8" placeholder="Enter message" required></textarea>
-        <button type="submit" class="hero-btn red-btn">Send Message</button>
-    </form>
-</div>
-
-</div>
-    </section> -->
+   
    
       <section class="contact">
         <h2>Contact Me!</h2>
