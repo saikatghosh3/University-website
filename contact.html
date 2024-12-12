@@ -145,6 +145,42 @@ form button:hover {
     }
 }
 
+/* map design 
+ */
+
+ /* body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    } */
+
+    .map-container {
+     margin: 6rem 0 6rem 23rem;
+
+      width: 80%;
+      max-width: 600px;
+      aspect-ratio: 16 / 9;
+      border: 3px solid #0077cc;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .map-container:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
 
     </style>
 
@@ -174,11 +210,21 @@ form button:hover {
 
     </section><!--end section-->
     <!-------Contact us-------->
-<section class="location">
+<!-- <section class="location"> -->
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.728569678299!2d90.33421987451779!3d23.757056788522313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf7c1a50ba97%3A0x3089051a5cb66ea2!2sChandrima%20Model%20Town!5e0!3m2!1sen!2sbd!4v1710865323618!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.728569678299!2d90.33421987451779!3d23.757056788522313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf7c1a50ba97%3A0x3089051a5cb66ea2!2sChandrima%20Model%20Town!5e0!3m2!1sen!2sbd!4v1710865323618!5m2!1sen!2sbd" width="600" height="450" style="border: 1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+<!-- 
+</section> -->
 
-</section>
+<div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509579!2d144.96305761531584!3d-37.8142179797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5778eade4735bff!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1678396193925!5m2!1sen!2sau"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
    
       <section class="contact">
        
